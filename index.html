@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akilesh M V | Premium Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">Akilesh MV</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+
+        <button id="themeToggle">🌙</button>
+
+    </nav>
+</header>
+
+
+<section id="home" class="home">
+
+    <div class="home-content">
+
+        <h1>Hi, I'm <span>Akilesh M V</span></h1>
+
+        <h2 id="typing-text"></h2>
+
+        <p>Frontend Developer | AI Enthusiast | Problem Solver</p>
+
+        <div class="home-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="box">
+        <p>
+            I am a B.E. Computer Science and Engineering (AI) graduate
+            passionate about frontend development and building modern web applications.
+        </p>
+    </div>
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="grid">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Git</div>
+        <div class="card">GitHub</div>
+        <div class="card">Responsive Design</div>
+    </div>
+</section>
+
+
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="box">
+        <h3>Sathyabama University</h3>
+        <p>B.E. Computer Science and Engineering (AI)</p>
+        <p>CGPA: 7.77 | Graduated: 2025</p>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <div class="project-card">
+    <h3>
+        <a href="https://github.com/akilesh-vel/Neuro-Text-Analytics" target="_blank">
+            NeuroText Analytics
+        </a>
+    </h3>
+    <p>AI-based text analysis system</p>
+</div>
+
+        <div class="project-card"
+            onclick="openProject(
+                'Portfolio Website',
+                'Premium responsive portfolio using HTML, CSS, JS.',
+                'https://github.com/akilesh'
+            )">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio using HTML, CSS, JS</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="box">
+
+        <p>Email:
+            <a href="mailto:akileshvel21@gmail.com">akileshvel21@gmail.com</a>
+        </p> <br>
+
+        <p>Phone:
+            <a href="tel:+919655954136">+91 96559 54136</a>
+        </p> <br>
+
+        <p>Linkedin:
+            <a href="https://www.linkedin.com/in/akilesh-vel-3260813a2/" target="_blank">linkedin.com/akilesh</a>
+        </p> <br>
+
+        <p>GitHub:
+            <a href="https://github.com/akilesh-vel" target="_blank">github.com/akilesh</a>
+        </p>
+
+    </div> <br>
+
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeProject()">&times;</span>
+
+        <h2 id="projectTitle"></h2>
+
+        <p id="projectDesc"></p>
+
+        <a id="projectLink" href="#" target="_blank" class="btn">
+            View GitHub
+        </a>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>© 2026 Akilesh M V | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
